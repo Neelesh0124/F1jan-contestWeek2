@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Quattrocento&family=Roboto&family=Ruda&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #1F1F1F;
+}
+section{
+    width: 90%;
+    margin-inline: auto;
+
+}
+header{
+    width: 90%;
+    height: 86px;
+    background-color: #1F1F1F;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+}
+header h1{
+    color: white;
+    font-size: 48px;
+    font-family: Poppins;
+    font-weight: 700;
+    word-wrap: break-word;
+    
+}
+header div input{
+    width: 550px;
+    height: 53px;
+    background-color: #262626;
+    border-radius: 15px;
+    border: none;
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.20);
+    font-size: 24px;
+    font-family: Roboto;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.btn{
+    height: 53px;
+    background-color: #262626;
+    color: white;
+    font-size: 22px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 20px;
+    word-wrap: break-word;
+    border-radius: 10px;
+}
+.btn:hover{
+    color: black;
+    background-color: #FECB03;
+}
+#About-Us{
+    margin-top: 20px;
+    padding: 40px 40px 30px 40px;
+    background-color: #262626;
+    border-radius: 50px;
+}
+#About-Us h1{
+    color: white;
+    font-size: 48px;
+    font-family: Poppins;
+    font-weight: 600;
+    word-wrap: break-word
+}
+.row_container{
+    width: 100%;
+}
+.col1 img{
+    width: 90px;
+    height: 90px;
+}
+.col1 p{
+    color: #C4C4C4;
+    font-size: 32px;
+    font-family: Poppins;
+    font-weight: 600;
+    word-wrap: break-word
+}
+
+.col2 img{
+    width: 200px;
+    height: 200px;   
+}
+.btn4{
+    background-color: #FECB03;
+    color: #262626;
+}
+.btn4:hover{
+    opacity: 50%;
+}
+#Our-Categories h4{
+    color: #C4C4C4 !important;
+    font-size: 30px;
+    font-family: Poppins;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+.card{
+    width: 346px;
+    height: 396px;
+    background-color: #1F1F1F;
+    border: 3px solid #262626;
+    border-radius: 20px;
+}
