@@ -24,18 +24,24 @@ header{
     justify-content: space-between;
     position: sticky;
     top: 0px;
+    z-index: 999999;
 }
 header h1{
-    color: white;
+    color: #FECB03;
     font-size: 48px;
     font-family: Poppins;
-    font-weight: 700;
+    font-weight: 600;
+    line-height: 40px;
     word-wrap: break-word;
     
 }
-header div input{
-    width: 550px;
-    height: 53px;
+header .searchbar{
+    width: 38%;
+    height: 53px;  
+}
+header input{
+    width: 100%;
+    height: 100%;
     background-color: #262626;
     border-radius: 15px;
     border: none;
@@ -43,7 +49,7 @@ header div input{
     color: rgba(255, 255, 255, 0.20);
     font-size: 24px;
     font-family: Roboto;
-    font-weight: 600;
+    font-weight: 500;
     word-wrap: break-word;
 }
 
@@ -53,7 +59,7 @@ header div input{
     color: white;
     font-size: 22px;
     font-family: Poppins;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 20px;
     word-wrap: break-word;
     border-radius: 10px;
@@ -62,31 +68,36 @@ header div input{
     color: black;
     background-color: #FECB03;
 }
+
+
+
 #About-Us{
     margin-top: 20px;
-    padding: 40px 40px 30px 40px;
+    padding: 40px;
     background-color: #262626;
     border-radius: 50px;
 }
-#About-Us h1{
+h1{
     color: white;
-    font-size: 48px;
+    font-size: 44px;
     font-family: Poppins;
-    font-weight: 600;
-    word-wrap: break-word
+    font-weight: 500;
+    word-wrap: break-word;
+    text-wrap: nowrap;
 }
 .row_container{
     width: 100%;
+    flex-wrap: wrap;
 }
 .col1 img{
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
 }
 .col1 p{
     color: #C4C4C4;
-    font-size: 32px;
+    font-size: 30px;
     font-family: Poppins;
-    font-weight: 600;
+    font-weight: 500;
     word-wrap: break-word
 }
 
@@ -98,20 +109,169 @@ header div input{
     background-color: #FECB03;
     color: #262626;
 }
-.btn4:hover{
-    opacity: 50%;
+#About-Us .btn4:hover{
+    background-color:#C4C4C4;
 }
-#Our-Categories h4{
-    color: #C4C4C4 !important;
-    font-size: 30px;
-    font-family: Poppins;
-    font-weight: 600;
-    word-wrap: break-word;
-}
+
 .card{
-    width: 346px;
+    width: 335px;
     height: 396px;
     background-color: #1F1F1F;
     border: 3px solid #262626;
     border-radius: 20px;
+    padding: 35px 25px 25px;
+    
+}
+.card h4{
+    color: #C4C4C4 !important;
+    font-size: 30px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+    line-height: 42px ;
+}
+.card p{
+    color: #FFFFFFCC;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+    line-height: 22px;
+}
+.btn5{
+    bottom: 25px;
+    right: 25px
+}
+.btn5:hover{
+    color: black;
+    background-color:#C4C4C4 !important;
+}
+#Our-Categories .btn5:hover{
+    opacity: 70% !important;
+}
+footer{
+    width: 90%;
+    margin-top: 80px;
+    margin-inline: auto;
+    background-color: #262626;
+    border-radius: 30px;
+    padding: 30px;
+    flex-wrap: wrap !important;
+}
+footer div h1{
+    color: #FECB03;
+    font-size: 48px;
+    font-family: Poppins;
+    font-weight: 600;
+    word-wrap: break-word;   
+}
+footer p{
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word   
+}
+footer h4{
+    color: white;
+    font-size: 32px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;   
+}
+ul li a{
+ text-decoration: none;
+ color: rgba(255, 255, 255, 0.80);
+ font-size: 20px;
+ font-family: Poppins;
+ font-weight: 500;
+ line-height: 35px;
+ word-wrap: break-word
+}
+.colum{
+    width: 45%;
+}
+a:hover{
+    color: #FECB03;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+      
+    .row_container{
+        justify-content: space-around !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header .searchbar{
+        width: 30%; 
+    }
+
+}    
+@media screen and (max-width: 768px) {
+    header{
+        width: 95%;
+        flex-direction:column;
+        height: auto;
+        gap: 20px;
+        padding: 20px 0px;
+    }  
+    header .searchbar{
+        width: 90%; 
+    }
+    .btn_div{
+        width: 90%;
+        justify-content: space-evenly;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .colum{
+        width: 100%;
+    }
+    .fL{
+        margin-bottom: 40px;
+        
+    }
+    .fR{
+        justify-content: space-between !important;
+    }
+    h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    h4{
+        font-size: 26px !important;
+    }
+   
+    .row_container{
+        justify-content: center !important;
+    }
+    #About-Us{
+        padding: 20px;
+    }
+    .col1 img{
+        width: 45px;
+        height: 45px;
+    }
+    .col1 p{
+       font-size: 16px;
+    }
+    
+    .col2 img{
+        width: 100px;
+        height: 100px; 
+        margin-top: 25px;  
+    }
+    .btn4, .btn5{
+        height: 45px;
+        font-size: 16px;
+        padding: 0px 15px !important;
+    }
+
+    ul li a{
+        font-size: 16px;
+       }
+ 
+
 }
