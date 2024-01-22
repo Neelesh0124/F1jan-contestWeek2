@@ -223,6 +223,10 @@ a:hover{
         width: 90%;
         justify-content: space-evenly;
     }
+    #About-Us{
+        padding: 20px;
+        border-radius: 25px !important;
+    }
     footer{
         flex-direction: column;
     }
@@ -247,10 +251,7 @@ a:hover{
     .row_container{
         justify-content: center !important;
     }
-    #About-Us{
-        padding: 20px;
-        border-radius: 25px;
-    }
+    
     .col1 img{
         width: 45px;
         height: 45px;
